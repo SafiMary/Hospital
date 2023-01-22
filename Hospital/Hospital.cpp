@@ -9,7 +9,7 @@ Hospital::~Hospital() {}
 
 void Hospital::addPatients(const std::string& name) {
 	_idpatients++;
-	_patients.insert(make_pair(_idpatients, name));
+	_patients.insert(std::make_pair( _idpatients, name ));
 }
 void Hospital::removePatients(int key) {
 	_patients.erase(key);
